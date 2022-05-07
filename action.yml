@@ -1,5 +1,5 @@
-name: 'CF Push'
-description: Push an application to a Cloud Foundry
+name: 'cloudfoundry'
+description: Cloud Foundry application manipulation
 inputs:
   manifest:
     description: The path to your CF application manifest
@@ -30,8 +30,6 @@ inputs:
     description: Debug your deploy dir to list all folders
     required: false
     default: false
-
-
 
 runs:
   using: docker
