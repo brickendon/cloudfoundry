@@ -1,4 +1,4 @@
-name: 'cloudfoundry'
+name: 'cloudfoundry-push'
 description: Cloud Foundry application manipulation
 inputs:
   manifest:
