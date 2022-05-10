@@ -1,5 +1,8 @@
 name: 'cloudfoundry-push'
 description: Cloud Foundry application manipulation
+branding:
+  icon: "upload-cloud"
+  color: "red"
 inputs:
   manifest:
     description: The path to your CF application manifest
