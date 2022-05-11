@@ -7,6 +7,9 @@ inputs:
   manifest:
     description: The path to your CF application manifest
     required: true
+  appname:
+    description: Application name to use in CF
+    required: true
   appdir:
     description: Set this parameter if you want to switch the working dir to push an app
     required: true
@@ -24,6 +27,12 @@ inputs:
     required: true
   space:
     description: The name of the Cloud Foundry space in which to deploy
+    required: true
+  domain:
+    description: The domain name to use in Cloud Foundry
+    required: true
+  hostname:
+    description: The hostname to use in association with Cloud Foundry
     required: true
   validate:
     description: Whether or not to validate the CF API's TLS certificate
