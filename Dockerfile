@@ -6,6 +6,8 @@ RUN apk update \
  && chmod 0755 cf
 
 FROM alpine:3
+RUN apk update \
+ && apk add curl jq
 COPY --from=download /cf /usr/bin/cf
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
