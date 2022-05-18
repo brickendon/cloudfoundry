@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name : CloudFoundry push application
-        uses: brickendon/cloudfoundry@main
+        uses: brickendon/cloudfoundry@v7
         with:
           api:      ${{ secrets.CF_API }}
           org:      ${{ secrets.CF_ORG }}
@@ -49,7 +49,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name : CloudFoundry push application with different directory
-        uses: brickendon/cloudfoundry@main
+        uses: brickendon/cloudfoundry@v7
         with:
           appdir:   './api/'       # use the appdir option to select a specif folder where the cf app is stored
           api:      ${{ secrets.CF_API }}
